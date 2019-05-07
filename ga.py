@@ -1,4 +1,8 @@
 from knn import *
+
+random.seed(12345)
+
+
 def make_population(population_size, population, max_k):
 	for x in range(population_size):
 		random_k = random.randint(1, max_k)

@@ -62,3 +62,10 @@ def get_accuracy(test, predictions):
 			
 
 get_data("data.csv", 0.8, training_set, testing_set)
+# predictions = []
+# for x in range(len(testing_set)):
+# 	neighbors = get_neighbors(training_set, testing_set[x], 1)
+# 	result = get_common(neighbors)
+# 	predictions.append(result)
+# accuracy = get_accuracy(testing_set, predictions)
+# print('Accuracy: ' + str(accuracy) + '%')
