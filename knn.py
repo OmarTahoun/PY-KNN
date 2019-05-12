@@ -62,10 +62,12 @@ def get_accuracy(test, predictions):
 			
 
 get_data("data.csv", 0.8, training_set, testing_set)
+
+# uncomment the next part to run the knn algorithm with a specific K-value on it's own
+# k = 3
 # predictions = []
 # for x in range(len(testing_set)):
-# 	neighbors = get_neighbors(training_set, testing_set[x], 1)
-# 	result = get_common(neighbors)
-# 	predictions.append(result)
-# accuracy = get_accuracy(testing_set, predictions)
-# print('Accuracy: ' + str(accuracy) + '%')
+# 	neighbors = get_neighbors(training_set, testing_set[x], k)
+# 	label = get_common(neighbors)
+# 	predictions.append(label)
+# print(get_accuracy(testing_set, predictions))
